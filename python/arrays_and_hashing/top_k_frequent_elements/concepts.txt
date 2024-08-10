@@ -1,0 +1,4 @@
+This problem using basic hashing to map each number to its count in O(n) time
+Then we use a 2D array of size n + 1, and place each number in the index matching it's count, again in O(n) time
+This allows us to find the k numbers with the highest count without using an O(nLog(n)) sort call
+Using these 'buckets', we can loop through the array backwards, and append each number until we reach k of them
