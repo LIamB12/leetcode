@@ -1,0 +1,4 @@
+This problem makes use of the two pointers algorithm to compare characters on either end of the string
+We start with 2 pointers on either end, and move them towards the middle one character at a time
+If either pointer's character is not alphanumeric, we increment that pointer and iterate, ignoring that char
+We then compare the value at each pointer's index, and move the pointers towards the center
