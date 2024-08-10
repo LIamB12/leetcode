@@ -1,0 +1,3 @@
+This problem uses the two pointers algorithm to solve the 2 sum problem on a sorted array
+The key is the sorted array, allowing us to use pointers instead of hashing, solving the problem with O(1) space
+We take the sum of the numbers at both pointers. If it is too large, we decrese the right pointer, and if it is too small, we increase the left pointer.
