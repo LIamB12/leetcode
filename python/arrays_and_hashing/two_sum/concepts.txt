@@ -1,0 +1,3 @@
+Loop through array of numbers and store each value in a HashMap, mapping value to index
+Find the difference between current number and target, and see if that difference is in the HashMap
+If it is, we have found our 2 numbers that add up to target, return their indices
