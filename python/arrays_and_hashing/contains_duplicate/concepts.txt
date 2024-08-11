@@ -1,0 +1,3 @@
+This problem makes use of a HashSet to keep track of each number that we have seen while iterating through nums
+With it, we can perform lookup operations in constant time, making the overall time complexity O(n)
+We loop through the array of numbers, store each number we see, and check if the current number has already been seen. If it has we return True. If we make it through the entire array, we return False.
