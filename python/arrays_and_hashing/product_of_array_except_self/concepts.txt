@@ -1,0 +1,2 @@
+The main concept used here is the idea of a pre/postfix array, storing the products up to/after the current index.
+We can avoid an O(n^2) solution by looping through the input array twice to create these helper arrays, and then mulltiplying the values at each index to get our output array.
