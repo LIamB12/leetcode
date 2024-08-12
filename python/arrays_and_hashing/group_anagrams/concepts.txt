@@ -1,0 +1,5 @@
+In this problem, we need a way to describe words using just their letters, such that two anagrams would have the same value.
+The two main ways to do this are to sort the words, or what I did in this approach, representing them as a length 26 tuple.
+Each index represents a letter of the alphabet, and its value holds the number of times that letter appears in the word.
+We need a tuple and not a list because it is hashable, so we can map each string's character tuple to an array of anagram strings.
+We then return all of the grouped anagram strings by looping through the map, and appending each value.
