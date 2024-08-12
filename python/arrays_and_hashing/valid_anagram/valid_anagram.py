@@ -14,12 +14,12 @@ class Solution:
                 t_char_counts[c] += 1
             else:
                 t_char_counts[c] = 1
-        
-        larger_map = s_char_counts if len(s_char_counts) > len(t_char_counts) else t_char_counts
-        shorter_map = t_char_counts if len(s_char_counts) > len(t_char_counts) else s_char_counts
 
-        for c in larger_map:
-            if shorter_map.get(c, 0) != larger_map.get(c):
+        if len(s_char_counts) != len(t_char_counts):
+            return False
+
+        for c in s_char_counts:
+            if t_char_counts.get(c, 0) != s_char_counts.get(c):
                 return False
         return True
 
