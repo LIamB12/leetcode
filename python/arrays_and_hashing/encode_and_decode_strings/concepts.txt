@@ -1,0 +1,7 @@
+For this problem, before converting the array to a single string, we add specifying characters denoting each string's length.
+We prepend each string with its length, and a single character "#".
+We need this in between character to handle multiple digit string lengths, so we know when to stop reading the length specifier.
+We then decode the string back to the original array by reading in the length specifier, and creating each word letter by letter.
+
+
+
