@@ -1,0 +1,7 @@
+We know that a number is the start of a sequence if num - 1 is not in the list.
+With this knowledge we can solve the problem in O(n).
+We first convert the list into a set, for O(1) lookups.
+Then we loop through each number, skipping it if num - 1 is in the list.
+If num - 1 is not in the list, we can find the length of the sequence that it starts by increasing num by 1 until num is no longer in the set.
+We then compare that length to our previous max sequence length, storing the larger value.
+With this method, we 'visit' each number exactly twice, except for sequence starters, which we visit once. This results in an O(n) solution.
