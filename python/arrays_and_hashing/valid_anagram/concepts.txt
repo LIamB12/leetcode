@@ -1,0 +1,4 @@
+This problem uses two HashMaps to keep track of the number of occurances of each letter in each word.
+Once we know that information, we return false if the length of the two maps are not equal, since the strings would contain some different letters.
+Then we can loop through and make sure that the contents of each map are the same.
+If they are, we know that each word uses the exact same letters, making them anagrams.
