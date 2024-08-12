@@ -1,0 +1,5 @@
+This problem uses matrix manipulation, and  the same HashSet algorithm used in contains-duplicate for validating each row, column, and 3x3 box.
+The rows are already constructed for us in the board.
+We construct the columns by transposing the board, so that each column is in its own array. This is done using list comprehension, placing board[i][j] in transposed_board[j][i].
+The 3x3 boxes are then constructed by looping through each stack of 3 rows, and splitting them into groups of length 3.
+
