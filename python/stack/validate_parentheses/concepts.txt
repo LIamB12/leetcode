@@ -1,0 +1,8 @@
+In this problem, we need to ensure that whenever a closing parenthesis is read, the last unclosed opening parenthesis matches it.
+We also need to ensure that every opening parenthesis is properly closed.
+
+We can verify the first statement by using a stack, and adding each opening parenthesis as we read the string char by char.
+Then when we reach a closing parenthesis, we pop from the stack, as the top element is the last unclosed opening parenthesis.
+If they don't match, we return false.
+Once we have read the entire string, we check to make sure that the stack is empty to verify the second requirement. 
+
