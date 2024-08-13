@@ -1,0 +1,7 @@
+In this problem, we use two pointers to traverse the array from the ends to the center, keeping track of the highest bars touched by each pointer.
+We decide which pointer to move based on the side with the lower max height so far.
+Let's imagine that on the left side, our highest bar so far is height 2, and it is 3 on the right.
+We know that no matter what is on the right of our left pointer, the water that can be stored at the current index will be capped at 2.
+Anything higher than 2 would simply spill over to the left.
+If the bar at our current index is less than 2, we can store water there, so we add the 2 - height[index] to the total
+Otherwise, it becomes our new heighest value on the left, and we continue to iterate until every index has been reached, and its water value has been added to the total.
