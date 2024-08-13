@@ -1,0 +1,3 @@
+In this problem, we can calculate the amount of water stored between two indicies by multipying the smaller height by the distance between the indicies.
+The main concept aside from the two pointers algorithm here is understanding when to move each pointer.
+By moving only the pointer with the lower height, we will algorithmically find the largest volume.
