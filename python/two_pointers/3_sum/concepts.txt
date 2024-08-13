@@ -1,0 +1,4 @@
+This problem can be broken down into many applications of the two pointers algorithm used in two sum II.
+While the numbers array is not sorted initially, we know that we will need to run n iterations of two sum, meaning that the runtime complexity will be at minimum O(n^2).
+This means that we can sort the array (an O(nLog(n)) process) without slowing down our algorithm, allowing us to use two pointers instead of a hash map for our two sum application. 
+This two pointers optimization lets us solve the problem in constant extra memory.
