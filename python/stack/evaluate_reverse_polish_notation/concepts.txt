@@ -1,0 +1,15 @@
+This problem uses basic stack principles, the main challenge is understanding the process of reverse polish notation.
+We know that all inputs are valid, so we just have to follow the procedure.
+Going through an example on paper helped a lot here.
+An example input is: ["1","2","+","3","*","4","-"]
+Written using parentheses, that is ((1 + 2) * 3) - 4
+If we were to solve that manually, we would replace the inner most brackets with 3, the result of 1 + 2.
+Then we are left with (3 * 3) - 4.
+We would now replace the brackets again with 9, the result of 3 * 3
+Now we have 9 - 4 = 5.
+This order of operations is reflected when we read the input left to right.
+We read in the inputs 1 and 2 and add them to our stack. 
+When we see the +, we pop the top 2 elements, add them, and push the result to our stack, effectively replacing [1, 2, +] with [3]
+We then read in the next 3, push it to the stack, and read in a *. 
+We can repeat this process, popping the top two elements, performing the operation, and pushing the result, until we have read in every character. 
+We then return the top of the stack.
