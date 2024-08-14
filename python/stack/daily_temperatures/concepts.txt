@@ -1,0 +1,7 @@
+This problem uses a data structure called a Monotonic Decreasing Stack.
+Whenever we push a new element, we pop all of the elements that are lesser than it.
+This ensures that the stack will always maintain a decreasing order.
+We can apply the structure to this problem by reading through the list of temperatures, and pushing them one by one.
+We will also keep track of the index each element came from so that we can uipdate the corresponding index in the outpt array once it gets popped.
+Whenever we pop an element, it will be because we have found an element greater than it.
+We can then add the difference between the popped element's index and our current index to the output array.
