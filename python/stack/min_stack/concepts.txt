@@ -1,0 +1,5 @@
+This problem is solved by using two syncronized stacks. 
+We store our main stack, and then a secondary stack, which holds the minimum value up to the corresponding "index" of our primary stack.
+Whenever we push to our primary stack, we peek at our secondary stack, and push the lesser of our new value, and the previous minimum.
+Because of the LIFO principle employed by stacks, we can be sure that the minimum "up to" a certain element will not change, as only the values above it can be removed.
+
