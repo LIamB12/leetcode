@@ -1,0 +1,11 @@
+The key to this problem is looking at it as a linear system of equations.
+A car's position is a function of its speed over time.
+Car fleets are the product of an intersection, and after the intersection, both cars follow the slope of the slower car.
+From geometry, we know that if car a has a lower y intercept, and a higher slope than car b, they will intersect as we increase time in the positive direction.
+We can apply this to the car situation - if a car has a lesser starting position, but higher speed, it will eventually reach the car ahead of it.
+This means that a car fleet will always form if that intersection happens before the target distance.
+An easy way to verify whether this happens is to compare the time it takes each of them to reach the target, using their constant speed.
+If the behind car would reach the target before the car in front, then we know a collision would occur.
+In this case, we can disregard the behind car entirely, as if the two were a fleet to begin with.
+We can repeat this for every set of 2 cars/fleets in by storing them in reverse sorted order, calculating collisions, and counting the fleets to solve this problem.
+
