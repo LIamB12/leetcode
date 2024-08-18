@@ -1,0 +1,6 @@
+This problem is testing a basic implementation of the binary search algorithm. 
+In a sorted array, we can search for an item in O(log(n)) time, using this algorithm.
+We start with two pointers at the beginning and end indicies, and a third one at their midpoint.
+If our target number is less than the number at the midpoint, we can restrict our range to the left pointer and move our right pointer to where the midpoint was previously.
+If it is greater, the same process applies with the opposite pointers.
+We repeat this process of divinding our list in half until we find our number, which gives the algorithm its logarithmic time complexity.
